@@ -12,7 +12,42 @@
     <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
-  <?php include_once 'php/header.php'; ?>
+    <header class="header">
+      <img class="menu-cover" src="img/menu-img.png" alt="" />
+
+      <div class="container">
+        <nav class="nav">
+          <div class="menu__icons">
+            <a href="index.html"
+              ><img
+                class="menu__mini-logo"
+                src="img/meerkat-mini-logo.svg"
+                alt=""
+            /></a>
+            <a href=""
+              ><img class="menu__map" src="img/meerkat-map.svg" alt=""
+            /></a>
+          </div>
+          <ul class="menu">
+            <a href="structure.html" class="menu__item-link">
+              <li class="menu__item">Строение</li>
+            </a>
+            <a href="nutrition.html" class="menu__item-link">
+              <li class="menu__item">Питание</li>
+            </a>
+            <a href="reproduction.html" class="menu__item-link">
+              <li class="menu__item">Размножение</li>
+            </a>
+            <a href="area.html" class="menu__item-link">
+              <li class="menu__item">Ареал</li>
+            </a>
+            <a href="enemies.html" class="menu__item-link">
+              <li class="menu__item">Враги</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <section class="enemies__slider">
@@ -126,7 +161,20 @@
         </div>
       </section>
     </main>
-    <?php include_once 'php/footer.php'; ?>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <div class="menu__pics">
+            <a href=""><img src="img/pictographs/youtube-logo.png" alt="" /></a>
+            <a href=""><img src="img/pictographs/wk-logo.png" alt="" /></a>
+            <a href=""><img src="img/pictographs/tg-logo.png" alt="" /></a>
+          </div>
+          <div class="logos">
+            <img src="img/vhutein-logo.svg" alt="" class="logo_item" />
+          </div>
+        </nav>
+      </div>
+    </footer>
 
     <script src="js/slider.js"></script>
   </body>
