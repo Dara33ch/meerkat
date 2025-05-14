@@ -1,0 +1,45 @@
+/* СТИЛИ МЕНЮ */
+.header {
+  /* background-image: url(../img/menu-img.png); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.menu-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1000;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 32px;
+}
+
+.menu__icons {
+  padding-top: 1vh;
+  justify-self: start;
+}
+
+.menu {
+  display: flex;
+  gap: 0 20px;
+  color: #fff9ed;
+  justify-self: end;
+  padding-top: 1vh;
+}
+
+.menu__mini-logo {
+  width: 4vh;
+}
+
+.menu__map {
+  width: 4vh;
+}

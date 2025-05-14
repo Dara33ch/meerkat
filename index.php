@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Сурикат | Главная</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+  <?php include_once 'php/header.php'; ?>
+    <div class="wrapper">
+      <div class="content">
+        <main class="main">
+          <section class="cover">
+            <div class="layers">
+              <div class="layer__header">
+                <div class="layers__caption">
+                  <img
+                    class="layers__image-logo"
+                    src="img/meerkat_logo.svg"
+                    alt=""
+                  />
+                  <!-- <div class="layers__title">Какой-то текст</div> -->
+                </div>
+              </div>
+              <div
+                class="layer layers__base"
+                style="background-image: url(img/back-layer.png)"
+              ></div>
+              <div
+                class="layer layers__middle"
+                style="background-image: url(img/middle-layer.png)"
+              ></div>
+
+              <div
+                class="layer layers__front"
+                style="background-image: url(img/front-layer.png)"
+              >
+                <div class="layer__bottom-caption">
+                  <div class="layers__paragraph">
+                    Один или несколько сурикатов всегда находятся на страже,
+                    стоя в вертикальной позиции на задних лапках.
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="layer__bottom">
+                <div class="layer__bottom-caption">
+                  <div class="layers__title">Какой-то текст</div>
+                </div>
+              </div> -->
+            </div>
+          </section>
+
+          <section
+            class="about"
+            style="background-image: url(img/meerkats.jpg)"
+          >
+            <div class="about__content">
+              <!-- <h2 class="about__header">Еще какой-то текст</h2> -->
+              <p class="about__paragraph-1">
+                Сурикаты любят принимать солнечные ванны, особенно утром, чтобы
+                согреться после прохладной ночи.
+              </p>
+              <p class="about__paragraph-2">
+                В каждой группе или клане сурикатов есть доминирующая пара,
+                которая обычно является основными размножающимися членами
+                группы.
+              </p>
+              <p class="about__paragraph-3">
+                Средняя продолжительность жизни суриката в дикой природе
+                составляет около <b>10</b> лет.
+              </p>
+              <div class="about__paragraph-two-col">
+                <p class="about__paragraph-4">
+                  Ночью сурикаты спят в своих норах, обычно свернувшись комком
+                  друг с другом для сохранения тепла.
+                </p>
+                <p class="about__paragraph-5">
+                  К хищникам, охотящимся на сурикатов, относятся орлы, ястребы и
+                  другие хищные птицы, а также земные хищники, такие как гиены
+                  или леопарды.
+                </p>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="container">
+                <nav class="footer-nav">
+                  <div class="menu__pics">
+                    <a href=""
+                      ><img src="img/pictographs/youtube-logo.png" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="img/pictographs/wk-logo.png" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="img/pictographs/tg-logo.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="logos">
+                    <img src="img/vhutein-logo.svg" alt="" class="logo_item" />
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- <footer class="footer"></footer> -->
+      </div>
+    </div>
+  </body>
+</html>

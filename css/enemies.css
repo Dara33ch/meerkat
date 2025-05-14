@@ -1,0 +1,165 @@
+body {
+  background-color: #5a4436;
+  color: #baa493;
+  overflow-x: hidden;
+}
+
+.enemies__slider-main_title {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.enemies__slider {
+  margin-top: 12vh;
+  height: 100vh;
+}
+
+.enemies__slider-meerkats {
+  width: 100%;
+  position: relative;
+}
+
+.enemies__slider-meerkats_img {
+  width: 40%;
+  position: absolute;
+  top: 16vh;
+  left: -6%;
+}
+
+.enemies__slider-list {
+  position: relative;
+  height: 80vh;
+}
+
+.enemies__slider-list_item {
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.6s ease;
+  height: 70vh;
+}
+
+.enemies__slider-list_item--active {
+  opacity: 1;
+}
+
+.enemies__slider-list_enemy-img {
+  width: 35%;
+  position: absolute;
+  top: 4vh;
+  right: 0;
+  z-index: 2;
+}
+
+.enemies__slider-list_enemy-slot {
+  width: 48%;
+  position: absolute;
+  top: 0;
+  right: -5%;
+  z-index: 1;
+}
+
+.enemies__slider-list_enemy-title {
+  position: absolute;
+  bottom: 6vh;
+  right: 20%;
+  z-index: 3;
+  font-size: 32px;
+  font-weight: 600;
+}
+/* 
+.enemies__slider__btn {
+  display: block;
+  position: relative;
+  height: 10vh;
+} */
+
+.enemies__slider__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.enemies__slider__btn-item {
+  all: unset;
+  width: 24px;
+  height: 24px;
+  background: #baa493;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.enemies__slider__btn-item--active {
+  background: #ffe3cd;
+}
+
+.enemies__slider__btn-item:hover {
+  background: #999;
+}
+
+.enemies__block-content {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.enemies__block-content_item {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5%;
+  transition: opacity 0.6s ease;
+  opacity: 0;
+}
+
+.enemies__block-content_item--active {
+  opacity: 1;
+}
+
+.enemies__block-content_text {
+  font-size: 20px;
+  font-weight: 600;
+  width: 90%;
+}
+
+.masked-photo {
+  width: 100%;
+  height: 60vh;
+
+  mask-image: url("../img/enemies/mask-form.svg");
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  -webkit-mask-image: url("../img/enemies/mask-form.svg");
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+#photo-1 {
+  background-image: url("../img/enemies/jacal-photo.png");
+}
+
+#photo-2 {
+  background-image: url("../img/enemies/snakes-photo.png");
+}
+
+#photo-3 {
+  background-image: url("../img/enemies/meerkats-photo.png");
+}
+
+/* .masked-photo {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/enemies/jacal-photo.png") center/cover no-repeat;
+  clip-path: path(
+    "M30.1085 417.879C27.6265 410.433 19.9362 408.48 15.8652 401.304C11.6105 393.804 1.77109 390.805 1.77109 381.769C1.77109 368.54 0 355.213 0 341.821C0 313.678 6.11278 286.855 11.6105 259.366C13.8074 248.382 18.4466 237.952 20.8595 227.093C22.496 219.729 22.5363 211.978 23.9097 204.561C27.2288 186.638 28.079 168.807 30.5021 150.936C34.2927 122.981 31.8796 93.4142 31.8796 65.1368V36.7993C31.8796 30.7614 37.1929 27.9764 37.1929 22.0402C37.1929 11.7284 58.6718 15.9398 64.448 15.9398C67.7131 15.9398 75.0586 18.4409 77.928 19.8756C81.6838 21.7535 86.8117 22.2853 90.3256 24.7953C98.9911 30.9849 108.643 30.0668 117.876 25.5824C138.728 15.4544 161.041 2.11398 184.981 8.95385C187.813 9.76307 188.994 15.7619 193.443 15.9398C198.901 16.1581 221 15.9398 221 15.9398C221 15.9398 238.204 3.33876 242.639 2.16467C252.904 -0.552417 267.822 1.34159 278.061 3.14861C286.602 4.65585 301.163 10.3814 307.776 16.3334C312.203 20.3177 333.564 15.4692 339.262 13.7752C348.899 10.9102 355.412 0 365.927 0C378.89 0 391.87 1.77109 404.596 1.77109C409.01 1.77109 416.204 0.371114 419.749 3.54218C423.02 6.46919 424.365 8.85546 428.998 8.85546C435.434 8.85546 440.565 5.31327 447.102 5.31327C452.998 5.31327 458.92 5.15399 464.813 5.31327C471.458 5.49286 478.737 7.2446 485.181 8.85546C489.252 9.87324 491.536 14.8178 495.118 15.8414C513.023 20.9571 531.881 22.0596 549.137 27.4519C554.453 29.1134 560.81 29.8952 566.356 30.1085C570.835 30.2808 574.166 33.6507 579.147 33.6507C583.478 33.6507 588.057 35.8494 592.332 36.7993C598.848 38.2474 605.112 36.3486 611.42 35.0282C622.436 32.7226 634.269 31.1922 644.677 26.5664C649.024 24.6342 666.714 21.9886 671.145 25.6808C678.057 31.441 681.827 39.118 687.971 45.2612C695.281 52.572 701.833 61.7162 706.665 70.8436C709.397 76.0041 712.462 82.1911 716.308 86.5867C718.593 89.1978 712.641 104.793 711.585 108.43C708.087 120.478 713.75 135.309 713.75 147.985C713.75 174.094 725.031 202.366 712.864 226.7C709.682 233.063 708.205 235.509 703.517 241.065C700.38 244.783 695.355 244.179 694.366 250.609C693.683 255.052 695.62 258.032 697.81 261.728C701.121 267.315 702.563 275.039 704.894 281.21C709.606 293.683 710.208 303.182 710.208 317.025C710.208 323.217 708.436 329.096 708.436 335.327C708.436 340.396 704.098 342.255 701.155 346.248C685.714 367.204 658.905 340.652 640.348 350.774C631.326 355.695 630.819 370.706 627.852 379.014C624.655 387.966 610.011 384.327 602.171 384.327C590.391 384.327 578.725 383.284 567.143 381.178C559.99 379.878 553.18 380.818 546.185 378.128C540.883 376.089 534.88 378.545 529.655 376.258C520.8 372.384 510.911 373.7 501.219 373.7C494.982 373.7 489.851 375.149 483.901 376.849C478.392 378.423 472.815 376.973 467.174 379.014C453.681 383.894 439.635 384.327 425.455 384.327C409.91 384.327 402.268 390.208 388.853 396.724C377.827 402.08 361.042 405.58 348.905 405.58C343.237 405.58 335.747 404.374 330.407 406.662C324.438 409.22 321.063 411.857 314.27 412.763C304.294 414.093 294.494 426.833 284.359 426.833H261.728H194.918C185.829 426.833 178.517 425.944 169.139 426.931C163.777 427.496 163.31 432.146 157.627 432.146H140.9H110.693C102.411 432.146 95.9321 437.46 88.9481 437.46C74.4346 437.46 61.7666 435.811 47.8195 433.819C44.4344 433.335 31.2901 421.424 30.1085 417.879Z"
+  );
+} */

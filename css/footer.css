@@ -1,0 +1,24 @@
+.footer {
+  display: block;
+  width: 100%;
+  /* height: 30vh; */
+  background-color: #3a1a07;
+  margin: 20vh 0 0 0;
+  padding: 4vh 0;
+}
+
+.menu__pics {
+  display: flex;
+  gap: 0 20px;
+  color: #fff9ed;
+  justify-self: end;
+  padding-top: 1vh;
+}
+
+.footer-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

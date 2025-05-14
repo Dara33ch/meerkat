@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ареал</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/enemies.css" />
+    <!-- <link rel="stylesheet" href="css/secondary_pages.css" /> -->
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+  <?php include_once 'php/header.php'; ?>
+
+    <main>
+      <section class="enemies__slider">
+        <div class="container">
+          <h1 class="enemies__slider-main_title">Кого стоит опасаться?</h1>
+        </div>
+
+        <div class="enemies__slider-meerkats">
+          <img
+            class="enemies__slider-meerkats_img"
+            src="img/enemies/scaring_meerkats.png"
+            alt=""
+          />
+        </div>
+        <div class="enemies__slider-list">
+          <div
+            class="enemies__slider-list_item enemies__slider-list_item--active"
+            id="content-1"
+          >
+            <img
+              class="enemies__slider-list_enemy-img"
+              src="img/enemies/jacal.png"
+              alt=""
+            />
+            <img
+              class="enemies__slider-list_enemy-slot"
+              src="img/enemies/enemy_slot.png"
+              alt=""
+            />
+            <p class="enemies__slider-list_enemy-title">Шакалы</p>
+          </div>
+          <div class="enemies__slider-list_item" id="content-2">
+            <img
+              class="enemies__slider-list_enemy-img"
+              src="img/enemies/snake.png"
+              alt=""
+            />
+            <img
+              class="enemies__slider-list_enemy-slot"
+              src="img/enemies/enemy_slot.png"
+              alt=""
+            />
+            <p class="enemies__slider-list_enemy-title">Змеи</p>
+          </div>
+          <div class="enemies__slider-list_item" id="content-3">
+            <img
+              class="enemies__slider-list_enemy-img"
+              src="img/enemies/angry_meerkats.png"
+              alt=""
+            />
+            <img
+              class="enemies__slider-list_enemy-slot"
+              src="img/enemies/enemy_slot.png"
+              alt=""
+            />
+            <p class="enemies__slider-list_enemy-title">Другие сурикаты</p>
+          </div>
+        </div>
+        <div class="enemies__slider__btn">
+          <button
+            class="enemies__slider__btn-item enemies__slider__btn-item--active"
+            data-button="content-1"
+          ></button>
+          <button
+            class="enemies__slider__btn-item"
+            data-button="content-2"
+          ></button>
+          <button
+            class="enemies__slider__btn-item"
+            data-button="content-3"
+          ></button>
+        </div>
+      </section>
+      <section class="enemies__block">
+        <div class="enemies__block-content">
+          <div
+            class="enemies__block-content_item enemies__block-content_item--active"
+            id="block-content-1"
+          >
+            <div class="masked-photo" id="photo-1"></div>
+            <div class="enemies__block-content_text">
+              Шакалы охотятся на сурикатов, в том числе на их детёнышей.
+              Сурикаты живут на юге Африки, в основном в пустыне Калахари и
+              Намиб. Эти зверьки живут группами, численность которых может
+              достигать 40–50 особей. При появлении шакала сурикаты ведут себя
+              так: взрослые окружают детёнышей и встают на задние лапы. Обычно
+              шакалы не нападают на группу сурикатов и отступают.
+            </div>
+          </div>
+          <div class="enemies__block-content_item" id="block-content-2">
+            <div class="masked-photo" id="photo-2"></div>
+            <div class="enemies__block-content_text">
+              Угрозу сурикатам предоставляют: Королевская кобра, Капская кобра и
+               чёрная мамба. Иногда змеи заползают в норы сурикатов и охотятся
+              на них, в том числе на детёнышей. При этом сурикаты — ловкие
+              животные и при борьбе со змеей проявляют сноровку. Укусить
+              суриката сложно из-за его высокой подвижности, и в большинстве
+              случаев змеи проигрывают и сами оказываются съедены.
+            </div>
+          </div>
+          <div class="enemies__block-content_item" id="block-content-3">
+            <div class="masked-photo" id="photo-3"></div>
+            <div class="enemies__block-content_text">
+              Сами сурикаты являются естественными врагами друг для друга. Это
+              связано с тем, что стаи сурикатов быстро съедают доступную в
+              округе пищу и опустошают территории своего проживания. Из-за этого
+              кланы вынуждены постоянно кочевать с одного места на другое, что
+              приводит к межклановым войнам за территорию и за кормовую базу.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <?php include_once 'php/footer.php'; ?>
+
+    <script src="js/slider.js"></script>
+  </body>
+</html>

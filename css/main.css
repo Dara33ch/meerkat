@@ -1,0 +1,184 @@
+/* СТИЛИ ОБЛОЖКИ */
+.cover {
+  position: relative;
+}
+.cover::after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: calc(var(--index) * 10);
+  background-image: url(../img/ground3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: calc(var(--index) * -4.5);
+}
+.layers {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  z-index: 2;
+  transition: var(--transition);
+}
+/* СКРОЛЛ СЛОЕВ */
+.layers__base {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  z-index: 0;
+}
+.layers__middle {
+  transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+}
+.layers__front {
+  transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+}
+/* КОНТЕЙНЕР ЛОГОТИПА */
+.layer__header {
+  z-index: 1;
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+  transition: var(--transition);
+  will-change: transform;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.layers__caption {
+  margin-top: calc(var(--index) * -11);
+}
+/* СТИЛИ ЛОГОТИПА */
+.layers__image-logo {
+  width: calc(var(--index) * 20);
+  filter: drop-shadow(12px 12px 12px #6f43005c);
+}
+
+/* АБЗАЦ НА ОБЛОЖКЕ */
+.layer__bottom-caption {
+  z-index: 1000;
+  margin-top: calc(var(--index) * 24);
+  margin-left: calc(var(--index) * 8);
+}
+
+/* СТИЛИ ТЕКСТА ПЕРВОГО АБЗАЦА */
+.layers__paragraph {
+  font-size: calc(var(--index) * 0.9);
+  max-width: calc(var(--index) * 14);
+}
+
+.about {
+  --main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+  min-height: 270vh;
+  background-size: cover;
+  background-position: center;
+  color: var(--text);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  text-align: center;
+  /* Update: */
+  top: -1px;
+  z-index: 10;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.about__header {
+  text-transform: uppercase;
+  font-size: calc(var(--index) * 1.8);
+  letter-spacing: calc(var(--index) / 7.5);
+  transform: var(--main-article-transform);
+  transition: var(--transition);
+  will-change: transform;
+}
+
+/* СТИЛИ АБЗАЦЕЙ */
+.about__paragraph-1 {
+  max-width: calc(var(--index) * 14);
+  font-size: calc(var(--index) * 0.9);
+  margin-bottom: calc(var(--index) * 10);
+  margin-left: calc(var(--index) * 30);
+  transform: var(--main-article-transform);
+  transition: var(--transition);
+  will-change: transform;
+}
+.about__paragraph-2 {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  max-width: calc(var(--index) * 14);
+  font-size: calc(var(--index) * 0.9);
+  margin-bottom: calc(var(--index) * 15);
+  margin-left: calc(var(--index) * 1);
+  transform: var(--main-article-transform);
+  transition: var(--transition);
+  will-change: transform;
+}
+.about__paragraph-3 {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  max-width: calc(var(--index) * 14);
+  font-size: calc(var(--index) * 0.9);
+  margin-bottom: calc(var(--index) * 12);
+  margin-left: calc(var(--index) * 1);
+  transform: var(--main-article-transform);
+  transition: var(--transition);
+  will-change: transform;
+}
+.about__paragraph-two-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: calc(var(--index) * 40);
+  font-size: calc(var(--index) * 0.9);
+  margin-bottom: calc(var(--index) * 1);
+  margin-left: calc(var(--index) * 1);
+}
+.about__paragraph-4 {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  max-width: calc(var(--index) * 14);
+  font-size: calc(var(--index) * 0.9);
+  transform: var(--main-article-transform);
+  transition: var(--transition);
+  will-change: transform;
+}
+.about__paragraph-5 {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  max-width: calc(var(--index) * 14);
+  font-size: calc(var(--index) * 0.9);
+  transform: var(--main-article-transform);
+  transition: var(--transition);
+  will-change: transform;
+}
+.content {
+  will-change: transform;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: calc(var(--index) * 2.5);
+  opacity: 0.45;
+  font-size: calc(var(--index) * 0.75);
+  letter-spacing: calc(var(--index) / 37.5);
+}
+
+.footer-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

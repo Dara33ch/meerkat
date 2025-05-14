@@ -1,0 +1,168 @@
+body {
+  background-color: #3a1a07;
+  color: #baa493;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.area__map {
+  background-color: #5a4436;
+  padding-top: 12vh;
+  height: 160vh;
+  position: relative;
+}
+
+.area__map-main_title {
+  font-size: 56px;
+  text-align: center;
+}
+
+.area__map::after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: calc(var(--index) * 10);
+  background-image: url(../img/area_page/fragments/fragment_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: calc(var(--index) * -10);
+  left: 0;
+}
+.area__map-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+.area__map-inner_content-box {
+  transition: var(--transition);
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.map-pic {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.meerkat-teacher-pic {
+  position: absolute;
+  width: 60%;
+  top: 16vh;
+  left: -10px;
+}
+
+.meerkat-baby-pic {
+  position: absolute;
+  width: 16%;
+  bottom: -24vh;
+  right: 24px;
+}
+
+.area__map-inner_info {
+  width: 60%;
+  margin: 4vh auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+
+.area__map-paragraph {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.area__map-inner_info-branching {
+  width: 100%;
+}
+
+.area__map-inner_info-countries {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.area__map-info_countries-item {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.stats {
+  padding-top: calc(var(--index) * 6);
+  min-height: 180vh;
+}
+
+.stats-inner_content {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+}
+
+.stats-inner_content-fragment {
+  position: absolute;
+  top: -12vh;
+  left: -24%;
+  width: 90%;
+  z-index: -1;
+}
+/* 
+.stats-inner_content-text {
+  width: 100%;
+  position: absolute;
+  top: 24vh;
+  left: 0;
+} */
+
+.stats-inner_content-text {
+  padding-top: 30vh;
+}
+
+.stats-inner_content-text > p {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.stats-inner_content-img {
+  width: 60%;
+  position: absolute;
+  top: 8vh;
+  right: -16%;
+}
+
+.stats-inner_numbers {
+  margin-top: 8vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.stats-inner_numbers-text > p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2vh 0;
+}
+
+.stats-title {
+  font-size: 32px;
+}
+
+.stats-inner_numbers-2 {
+  position: relative;
+  margin-top: 8vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.stats-inner_numbers-2-img {
+  justify-self: end;
+}
